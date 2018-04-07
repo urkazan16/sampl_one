@@ -21,6 +21,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'faker'
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,6 +44,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.7'
   gem 'byebug', platform: :mri
+    gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :test do
